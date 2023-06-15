@@ -1,7 +1,7 @@
 /**
  * @file solution.cpp
  * @author Alexandr Voronin
- * @brief `proxy 2` task solution
+ * @brief `A + B` task solution
  * @version 0.1
  * @date 2023-06-12
  * 
@@ -18,6 +18,6 @@ int main() {
     int a;
     int b;
     cin >> a >> b;
-    cout << a + b << "" << endl;
+    cout << a + b << endl;
     return 0;
 }

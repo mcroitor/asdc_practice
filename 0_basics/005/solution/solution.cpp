@@ -1,7 +1,7 @@
-/**
+﻿/**
  * @file solution.cpp
  * @author Alexandr Voronin
- * @brief `proxy 2` task solution
+ * @brief `сумма чисел` task solution
  * @version 0.1
  * @date 2023-06-12
  * 
@@ -17,7 +17,7 @@ int main() {
     int N;
     cin >> N;
 
-    int A[N];
+    int *A= new int [N];
     int sum = 0;
 
     for (int i = 0; i < N; i++) {

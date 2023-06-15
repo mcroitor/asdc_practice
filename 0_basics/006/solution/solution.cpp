@@ -1,7 +1,7 @@
-/**
+﻿/**
  * @file solution.cpp
  * @author Alexandr Voronin
- * @brief `proxy 2` task solution
+ * @brief `максимальный элемент` task solution
  * @version 0.1
  * @date 2023-06-12
  * 
@@ -17,13 +17,14 @@ int main() {
     int N;
     cin >> N;
 
-    int A[N];
-    int Max = 0;
+    int *A = new int[N];
+    
 
     for (int i = 0; i < N; i++) {
         cin >> A[i];
 
     }
+    int Max = A[0];
     for (int i = 0; i < N; i++) {
         if (Max < A[i]) {
             Max = A[i];

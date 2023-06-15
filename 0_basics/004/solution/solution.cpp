@@ -1,7 +1,7 @@
-/**
+﻿/**
  * @file solution.cpp
  * @author Alexandr Voronin
- * @brief `proxy 2` task solution
+ * @brief `минимум двух чисел` task solution
  * @version 0.1
  * @date 2023-06-12
  * 
