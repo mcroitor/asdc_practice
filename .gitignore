@@ -33,3 +33,6 @@
 
 # skip tests
 tests/
+
+# skip vscode
+.vscode/
