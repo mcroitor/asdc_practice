@@ -13,8 +13,10 @@
  * 
  */
 
-$x = $argv[1];
-$y = $argv[2];
+echo "Enter first variable: ";
+$x = readline();
+echo "Enter second variable: ";
+$y = readline();
 
 function countDays($x, $y){
 
@@ -29,4 +31,5 @@ function countDays($x, $y){
 
 $result = countDays($x, $y);
 echo $result;
+
 ?>    
