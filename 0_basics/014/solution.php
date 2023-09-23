@@ -14,7 +14,9 @@
  * 
  */
 
-$c = $argv[1];
+echo "Enter data: ";
+
+$c = readline();
 
 function isNumber($c){
 
@@ -23,6 +25,8 @@ function isNumber($c){
 
 $result = isNumber($c);
 echo $result;
+
+
 
 
 ?>    
