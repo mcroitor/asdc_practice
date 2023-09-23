@@ -15,13 +15,17 @@
  * 
  */
 
-$x = $argv[1];
+echo "Enter data: ";
+
+
+$x = readline();
 
 function isNumberPowerOfTwo($x){
 
     return $x % 2 == 0; 
 }
 
-isNumberPowerOfTwo($x);
+$result = isNumberPowerOfTwo($x);
 echo $result;
+
 ?>    
