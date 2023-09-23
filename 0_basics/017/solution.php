@@ -9,8 +9,8 @@
  * @copyright Copyright (c) 2023
  * 
  */
-
-$inputNumb = $argv[1];
+echo "Enter first variable: ";
+$inputNumb = readline();
 
 function countNumberSum($inputNumb){
 
