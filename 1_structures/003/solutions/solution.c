@@ -58,7 +58,16 @@ bool isValidBrackets(const char* str) {
 
 int main() {
     char str[1001];
-    scanf("%1000s", str);
+    if (fgets(str, sizeof(str), stdin) == NULL) {
+        str[0] = '\0';
+    }
+    // Remove newline if present
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (str[i] == '\n') {
+            str[i] = '\0';
+            break;
+        }
+    }
     
     if (isValidBrackets(str)) {
         printf("YES\n");
