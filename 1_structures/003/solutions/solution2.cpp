@@ -32,7 +32,7 @@ bool isValid(std::string s) {
 
 int main() {
     std::string s;
-    std::cin >> s;
+    std::getline(std::cin, s);
     if (isValid(s)) std::cout << "YES" << std::endl;
     else std::cout << "NO" << std::endl;
     return 0;
