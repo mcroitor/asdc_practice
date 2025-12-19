@@ -4,7 +4,7 @@
 
 int main() {
     std::string s;
-    std::cin >> s;
+    std::getline(std::cin, s);
     std::stack<char> stk;
 
     for (char ch : s) {
