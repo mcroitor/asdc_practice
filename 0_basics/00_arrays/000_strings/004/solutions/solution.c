@@ -1,7 +1,7 @@
 /**
  * @file solution.c
  * @author Mihail Croitor
- * @brief `strlen` task solution
+ * @brief Custom string length function (my_strlen) implementation
  * @version 0.1
  * @date 2025-12-19
  * 
