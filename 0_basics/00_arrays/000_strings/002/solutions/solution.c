@@ -15,9 +15,13 @@
 int main() {
     char S[1001];
     fgets(S, sizeof(S), stdin);
+    size_t len = strlen(S);
+    if (len > 0 && S[len - 1] == '\n') {
+        S[--len] = '\0';
+    }
     int N;
     scanf("%d", &N);
-    int POS = strlen(S) - N;
+    int POS = (int)len - N;
     if (POS < 0) {
         POS = 0;
     }
