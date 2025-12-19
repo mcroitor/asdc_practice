@@ -26,9 +26,17 @@ void ToLower(char* S) {
 int main() {
     char S[1001];
     fgets(S, sizeof(S), stdin);
+    
+    // Remove newline character if present
+    for (int i = 0; S[i] != '\0'; i++) {
+        if (S[i] == '\n') {
+            S[i] = '\0';
+            break;
+        }
+    }
 
     ToLower(S);
     
-    printf("%s", S);
+    printf("%s\n", S);
     return 0;
 }
