@@ -34,4 +34,4 @@
 
 | INPUT | OUTPUT |
 | ----- | ------ |
-| -- input sample -- | -- output sample -- |
+| 3 3<br>1 2 3<br>3 2 1 | 0 0 |
