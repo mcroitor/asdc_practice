@@ -12,9 +12,9 @@
 
 ## ограничения
 
- * -- input data limits --
- * time limit: 1s
- * memory limit: 8m
+* -- input data limits --
+* time limit: 1s
+* memory limit: 8m
 
 ## пример
 
