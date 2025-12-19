@@ -6,7 +6,7 @@
  * @version 0.1
  */
 
-$S = fgets(STDIN);
+$S = trim(fgets(STDIN));
 list($POS, $N) = explode(' ', trim(fgets(STDIN)));
 if ($N > strlen($S) - $POS) {
     $N = strlen($S) - $POS;
