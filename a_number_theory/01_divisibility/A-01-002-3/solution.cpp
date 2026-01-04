@@ -39,7 +39,7 @@ struct fraction {
     }
 };
 
-fraction& operator+(fraction lhs, const fraction& rhs) {
+fraction operator+(fraction lhs, const fraction& rhs) {
     lhs += rhs;
     return lhs;
 }
