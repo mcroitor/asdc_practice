@@ -70,7 +70,33 @@ int main() {
 
     fraction result(0, 1);
     if (!non_repeating.empty()) {
-        result += fraction(std::stof(non_repeating));
+        std::size_t decimal_pos = non_repeating.find('.');
+        if (decimal_pos == std::string::npos) {
+            // non_repeating is an integer
+            std::size_t int_value = std::stoull(non_repeating);
+            result += fraction(int_value, 1);
+        } else {
+            std::string integer_part = non_repeating.substr(0, decimal_pos);
+            std::string fractional_part = non_repeating.substr(decimal_pos + 1);
+
+            std::size_t int_value = 0;
+            if (!integer_part.empty()) {
+                int_value = std::stoull(integer_part);
+            }
+
+            std::size_t frac_value = 0;
+            if (!fractional_part.empty()) {
+                frac_value = std::stoull(fractional_part);
+            }
+
+            std::size_t denom = 1;
+            for (std::size_t i = 0; i < fractional_part.size(); ++i) {
+                denom *= 10;
+            }
+
+            std::size_t numerator = int_value * denom + frac_value;
+            result += fraction(numerator, denom);
+        }
     }
 
     // period to fraction. let x = 0.(repeating), in this case x = repeating / (10^len(repeating) - 1)
