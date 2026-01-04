@@ -5,7 +5,7 @@
 
 ## 01. Делимость целых чисел
 
-- [A-01-001-1 Задача 3n + 1](./01_divisibility/A-01-001-1/readme.md)
+- [A-01-001-2 Задача 3n + 1](./01_divisibility/A-01-001-2/readme.md)
 - [A-01-002-1 Период числа](./01_divisibility/A-01-002-1/readme.md)
 - [A-01-003-1 Период числа - 2](./01_divisibility/A-01-003-1/readme.md)
 - [A-01-004-1 Четное число](./01_divisibility/A-01-004-1/readme.md)
