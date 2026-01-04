@@ -30,7 +30,7 @@
 
 ## ограничения
 
-* $0 \leq i, j \leq 10000$
+* $1 \leq i, j \leq 10000$
 * time limit: 1s
 * memory limit: 8m
 
