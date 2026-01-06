@@ -12,9 +12,9 @@
 
 ## ограничения
 
- * 1 <= N, M, a[i] <= 1000
- * time limit: 1s
- * memory limit: 8m
+* 1 <= N, M, a[i] <= 1000
+* time limit: 1s
+* memory limit: 8m
 
 ## пример
 
